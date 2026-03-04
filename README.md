@@ -4,7 +4,7 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 The **Smart Text Analyzer** is an interactive text processing system developed as part of the Data Structures course.
 
@@ -21,7 +21,7 @@ The system processes text and provides analytical and predictive features throug
 
 ---
 
-## 🧠 Core Learning Objectives
+##  Core Learning Objectives
 
 This project focuses on applying Data Structures in practical scenarios, including:
 
@@ -36,7 +36,7 @@ The goal was not only to build features, but to justify every structural choice 
 
 ---
 
-## 🚀 Features
+##  Features
 
 ### 🔹 Text Processing
 
@@ -63,7 +63,7 @@ The goal was not only to build features, but to justify every structural choice 
 
 ---
 
-## 🏗 Data Structures Used and Justification
+##  Data Structures Used and Justification
 
 | Data Structure       | Usage                                     | Reason                        |
 | -------------------- | ----------------------------------------- | ----------------------------- |
@@ -78,23 +78,23 @@ Using lists instead of dictionaries for frequency counting would require O(n) se
 
 ---
 
-## 🔍 Algorithmic Components
+##  Algorithmic Components
 
-### 1️⃣ N-gram Language Modeling
+### 1.  N-gram Language Modeling
 
 Bigram and trigram structures are built using nested dictionaries to simulate contextual word prediction.
 
-### 2️⃣ Edit Distance (Dynamic Programming)
+### 2.  Edit Distance (Dynamic Programming)
 
 The Levenshtein algorithm is implemented manually to compute minimum edit operations for spell correction.
 
-### 3️⃣ Prefix Tree (Trie)
+### 3.  Prefix Tree (Trie)
 
 Used to perform efficient autocomplete operations where search time depends on prefix length rather than total vocabulary size.
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 Smart-Text-Analyzer/
@@ -107,7 +107,7 @@ Smart-Text-Analyzer/
 
 ---
 
-## ▶️ How to Run
+##  How to Run
 
 ```bash
 python main.py
@@ -117,7 +117,7 @@ Then choose to load text from file or direct input and interact with the menu.
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 The system was tested using structured sample text including:
 
@@ -131,7 +131,7 @@ All modules were verified to execute without runtime errors.
 
 ---
 
-## 📈 Future Improvements
+##  Future Improvements
 
 * GUI-based interface implementation
 * Context-aware spell correction using probability
@@ -141,7 +141,7 @@ All modules were verified to execute without runtime errors.
 
 ---
 
-## 👩‍💻 Developed By
+##  Developed By
 
 **Asala Abu Gharara**
 **Sara Abu Mandeel**
