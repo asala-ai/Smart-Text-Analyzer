@@ -4,61 +4,106 @@
 
 ---
 
-##  Overview
+##  Project Overview
 
-The **Smart Text Analyzer** is an interactive text-processing system developed as part of the Data Structures course.
+The **Smart Text Analyzer** is an interactive text processing system developed as part of the Data Structures course.
 
-The project demonstrates how fundamental data structures can be used to implement analytical and intelligent text features without relying on external NLP libraries.
+This project demonstrates how fundamental data structures can be applied to build intelligent text analysis features similar to those used in real-world Natural Language Processing (NLP) systems.
 
-The focus of this project is on efficient data organization, algorithmic reasoning, and structural design decisions.
+Rather than relying on external NLP libraries, all core logic was implemented manually to emphasize understanding of:
 
----
+* Efficient data storage
+* Algorithmic optimization
+* Time complexity considerations
+* Structural design decisions
 
-##  Data Structures Applied
-
-This system applies core data structures in practical scenarios:
-
-* **List** → Sequential word and sentence storage
-* **Dictionary (HashMap)** → Word frequency counting and N-gram modeling (O(1) average lookup)
-* **Set** → Fast membership checking for vocabulary, stop words, and sentiment lexicons
-* **Stack (List-based)** → Undo functionality using LIFO principle
-* **Trie (Prefix Tree)** → Efficient prefix-based autocomplete
-* **Nested Dictionaries** → Bigram and Trigram contextual prediction
-* **Dynamic Programming** → Edit Distance algorithm for spell correction
-
-Each structure was selected based on time complexity considerations and scalability.
+The system processes text and provides analytical and predictive features through a structured menu-driven interface.
 
 ---
 
-##  Implemented Features
+##  Core Learning Objectives
+
+This project focuses on applying Data Structures in practical scenarios, including:
+
+* Efficient frequency counting using Hash Maps
+* Fast membership testing using Sets
+* Implementing Undo functionality using Stack (LIFO principle)
+* Building a Trie (Prefix Tree) for autocomplete
+* Constructing Bigram and Trigram models using nested dictionaries
+* Implementing Edit Distance using Dynamic Programming
+
+The goal was not only to build features, but to justify every structural choice based on efficiency and scalability.
+
+---
+
+##  Features
+
+### 🔹 Text Processing
+
+* Text preprocessing (lowercasing, punctuation removal, tokenization)
+* Sentence extraction
+* Word tokenization
 
 ### 🔹 Analytical Features
 
-* Word statistics (total words, unique words, top frequencies)
-* Character statistics
-* Word search with sentence reporting
-* Word replacement with undo
+* Word Statistics (total words, unique words, top frequencies)
+* Character Statistics
+* Word Search with sentence position
+* Word Replacement with Undo support
 
 ### 🔹 Intelligent Features
 
-* Smart Autocomplete (Trie-based)
-* Bigram next-word prediction
-* Trigram context prediction
-* Spell check using Levenshtein Edit Distance
-* Sentiment analysis with basic negation handling
-* Keyword extraction using stop-word filtering
-* Word cloud data preparation (normalized frequencies)
+* **Smart Autocomplete** (Trie-based prefix search)
+* **Bigram Next Word Prediction**
+* **Trigram Context Prediction**
+* **Spell Check** using Levenshtein Edit Distance
+* **Sentiment Analysis** with basic negation handling
+* **Keyword Extraction** using stop-word filtering
+* **Word Cloud Data Preparation** using normalized frequencies
 
 ---
 
-##  Algorithmic Focus
+##  Data Structures Used and Justification
 
-* Efficient frequency counting using hash maps
-* Context modeling using N-grams
-* Prefix search optimization using Trie
-* Dynamic programming for edit distance computation
+| Data Structure       | Usage                                     | Reason                        |
+| -------------------- | ----------------------------------------- | ----------------------------- |
+| List                 | Store words and sentences                 | Ordered sequential processing |
+| Dictionary (HashMap) | Frequency counting, N-grams               | O(1) average lookup time      |
+| Set                  | Vocabulary, stop words, sentiment lexicon | O(1) membership testing       |
+| Stack (List-based)   | Undo functionality                        | LIFO behavior                 |
+| Trie                 | Autocomplete                              | Efficient prefix-based search |
+| Nested Dictionaries  | Bigram & Trigram models                   | Context-aware prediction      |
 
-This project reflects the practical importance of data structures in building intelligent systems.
+Using lists instead of dictionaries for frequency counting would require O(n) search per insertion, making the system inefficient for larger texts. Therefore, hash-based dictionaries were selected.
+
+---
+
+##  Algorithmic Components
+
+### 1. N-gram Language Modeling
+
+Bigram and trigram structures are built using nested dictionaries to simulate contextual word prediction.
+
+### 2. Edit Distance (Dynamic Programming)
+
+The Levenshtein algorithm is implemented manually to compute minimum edit operations for spell correction.
+
+### 3. Prefix Tree (Trie)
+
+Used to perform efficient autocomplete operations where search time depends on prefix length rather than total vocabulary size.
+
+---
+
+##  Project Structure
+
+```
+Smart-Text-Analyzer/
+│
+├── python your_script_name.py
+├── sample_text.txt
+├── README.md
+└── report.pdf
+```
 
 ---
 
@@ -68,22 +113,45 @@ This project reflects the practical importance of data structures in building in
 python your_script_name.py
 ```
 
-After running the program:
+Then choose to load text from file or direct input and interact with the menu.
 
-1. Choose to load text from a file or enter it directly.
-2. Interact with the menu to explore the available features.
+---
 
-Make sure Python 3 is installed.
+##  Testing
+
+The system was tested using structured sample text including:
+
+* Repeated terms
+* Predictable bigram/trigram sequences
+* Positive and negative sentiment cases
+* Invalid file paths
+* Replacement and undo validation
+
+All modules were verified to execute without runtime errors.
+
+---
+
+##  Future Improvements
+
+* GUI-based interface implementation
+* Context-aware spell correction using probability
+* Real-time text streaming using Queue
+* Linked List-based dynamic editor simulation
+* Export results to CSV or JSON
 
 ---
 
 ##  Developed By
 
-Asala Abu Gharara
-Sara Abu Mandeel
+**Asala Abu Gharara**
+**Sara Abu Mandeel**
 
 Data Structures Course
 University College of Applied Sciences
+
+---
+
+> This project reflects a practical application of core data structures in building intelligent text-processing systems.
 
 ---
 
